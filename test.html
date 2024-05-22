@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masquer/Afficher avec Animation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <button id="toggleButton">Masquer/Afficher le paragraphe</button>
+    <p id="myParagraph">Ceci est un paragraphe.</p>
+
+    <script>
+        $(document).ready(function(){
+            var isVisible = true;
+            
+            $("#toggleButton").click(function(){
+                if (isVisible) {
+                    $("#myParagraph").slideUp("slow", function() {
+                        isVisible = false;
+                    });
+                } else {
+                    $("#myParagraph").slideDown("slow", function() {
+                        isVisible = true;
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+</body>
+</html>
